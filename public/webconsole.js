@@ -73,7 +73,7 @@
   });
 
   $(document).ready(function() {
-    $(this).keypress(function(event) {
+    $(this).keyup(function(event) {
       if (event.which == $KEY_CODE) {
         $("#rack-webconsole").slideToggle('fast', function() {
           if ($(this).is(':visible')) {
